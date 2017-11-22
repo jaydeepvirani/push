@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+  <data class="RowCardBinding"/>
+  <android.support.percent.PercentRelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="@color/colorItemPayCardBg"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      >
+    <ImageView
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:minHeight="45dp"
+        app:layout_widthPercent="10%"
+        />
+    <TextView
+        android:id="@+id/textViewCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/selection"
+        android:textSize="19sp"
+        tools:text="@string/dummy_card_number"
+        />
+    <ImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_widthPercent="10%"
+        app:srcCompat="@drawable/ic_remove_card"
+        />
+  </android.support.percent.PercentRelativeLayout>
+</layout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="ItemAgentJobComplete">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.JobsViewModel"
+        />
+  </data>
+  <android.support.v7.widget.CardView style="@style/JobCardStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="0dp"
+        android:paddingTop="4dp"
+        >
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+        <ImageView
+            android:id="@+id/jobThumbImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            app:imageUrl="@{viewmodel.imageUrl}"
+            app:srcCompat="@drawable/unibuy_logo_items"
+            />
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginTop="1dp"
+              android:maxLines="1"
+              android:text="@{viewmodel.jobTypeField}"
+              android:textSize="12sp"
+              app:textViewColor="@{viewmodel.jobTypeColor}"
+              tools:text="Taxation"
+              android:layout_weight="1"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="1dp"
+              android:maxLines="1"
+              android:text="@{viewmodel.jobIdField}"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              tools:text="#234"
+              android:layout_weight="1"
+              style="@style/fontAvenirBook"
+              />
+
+          <RatingBar
+              android:id="@+id/jobRatingBar"
+              android:layout_width="wrap_content"
+              android:layout_height="17dp"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:rating="@{viewmodel.jobRatingBar}"
+              style="@style/RatingBar.Agent"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:minHeight="45dp"
+            >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:maxLines="2"
+              android:text="@{viewmodel.jobTitle}"
+              android:textColor="@color/colorShark"
+              android:textSize="15sp"
+              tools:text="What are different types of taxation in the country?"
+              style="@style/fontAvenirMedium"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+          <TextView
+              android:id="@+id/clientName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/jobPrice"
+              android:layout_toStartOf="@+id/jobPrice"
+              android:drawableLeft="@drawable/drw_client"
+              android:drawablePadding="@dimen/icon_padding"
+              android:drawableStart="@drawable/drw_client"
+              android:ellipsize="end"
+              android:gravity="center_vertical"
+              android:maxLines="1"
+              android:layout_weight="1"
+              android:singleLine="true"
+              android:text="@{viewmodel.jobClientName}"
+              android:textColor="@color/colorSpunPearl"
+              android:textSize="10sp"
+              tools:text="Au Yiu Pong"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/jobPrice"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_centerVertical="true"
+              android:drawableLeft="@drawable/drw_job_budget"
+              android:drawablePadding="@dimen/icon_padding"
+              android:drawableStart="@drawable/drw_job_budget"
+              android:gravity="center_vertical"
+              android:maxLines="1"
+              android:layout_weight="1"
+              android:text="@{viewmodel.jobPrice}"
+              android:textColor="@color/colorSpunPearl"
+              android:textSize="10sp"
+              tools:text="HKD 200.00"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:drawableLeft="@drawable/drw_agent_job_complete"
+              android:drawablePadding="@dimen/icon_padding"
+              android:drawableStart="@drawable/drw_agent_job_complete"
+              android:gravity="center_vertical"
+              android:maxLines="1"
+              android:layout_weight="1"
+              android:text="@{viewmodel.jobEndDate}"
+              android:textColor="@color/colorSpunPearl"
+              android:textSize="10sp"
+              tools:text="2017-05-12 21:00"
+              style="@style/fontAvenirBook"
+              />
+        </LinearLayout>
+      </LinearLayout>
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+</layout>

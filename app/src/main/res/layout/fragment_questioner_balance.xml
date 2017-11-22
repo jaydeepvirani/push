@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="QuestionerBalanceBinding"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/UniDealToolbar.Questioner"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center"
+          android:text="@string/title_transaction"
+          android:textColor="@color/colorWhite"
+          android:textSize="18sp"
+          style="@style/fontAvenirMedium"
+          />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="65dp"
+          android:layout_marginBottom="28dp"
+          android:layout_marginTop="28dp"
+          android:background="@color/colorWhite"
+          android:gravity="center"
+          >
+
+        <LinearLayout
+            android:id="@+id/queEarningSection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/title_spend"
+              android:textColor="@color/colorShark"
+              android:textSize="14sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/textViewTotalSpent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorShark"
+              android:textSize="17sp"
+              tools:text="750 HK$"
+              style="@style/fontAvenirMedium"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/promo_balance"
+              android:textColor="@color/colorShark"
+              android:textSize="14sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/textViewPromo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:textColor="@color/colorShark"
+              android:textSize="17sp"
+              tools:text="160 HK$"
+              style="@style/fontAvenirMedium"
+              />
+        </LinearLayout>
+      </LinearLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="28dp"
+          android:text="@string/sub_title_transaction_history"
+          android:textColor="@color/colorShark"
+          android:textSize="17sp"
+          style="@style/fontAvenirMedium"
+          />
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/spendTransactionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UnidealRecyclerView"
+            />
+        <RelativeLayout
+            android:id="@+id/progressBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolBar"
+            >
+          <ProgressBar
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/emptyViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:text="@string/no_data_available"
+              />
+        </RelativeLayout>
+      </FrameLayout>
+    </LinearLayout>
+  </LinearLayout>
+</layout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="UniDealToolbar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/toolbar_height</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="android:contentInsetLeft">0dp</item>
+    <item name="android:contentInsetStart">0dp</item>
+    <item name="contentInsetLeft">0dp</item>
+    <item name="contentInsetStart">0dp</item>
+  </style>
+
+  <style name="DialogThemeAgent" parent="android:Theme.Material.Light.Dialog">
+    <item name="colorAccent">@color/colorCuriousBlue</item>
+  </style>
+</resources>

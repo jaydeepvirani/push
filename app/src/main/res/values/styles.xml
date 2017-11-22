@@ -1,0 +1,521 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="UniDealTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorSantasGray</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorControlNormal">@color/colorGallery</item>
+    <item name="colorControlActivated">@color/colorSantasGray</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="UniDealTheme.Agent">
+    <item name="colorPrimary">@color/colorCuriousBlue</item>
+    <item name="colorPrimaryDark">@color/colorCuriousBlue</item>
+    <item name="colorAccent">@color/colorSantasGray</item>
+  </style>
+
+  <style name="UniDealTheme.Questioner">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPersianGreen</item>
+    <item name="colorPrimaryDark">@color/colorPersianGreen</item>
+    <item name="colorAccent">@color/colorSantasGray</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorControlNormal">@color/colorGallery</item>
+    <item name="colorControlActivated">@color/colorSantasGray</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="UniDealThemeAuth" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorWhite</item>
+    <item name="colorAccent">@color/colorGallery</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorControlNormal">@color/colorGallery</item>
+    <item name="colorControlActivated">@color/colorSantasGray</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="UniDealDialog" parent="Theme.AppCompat.Light.Dialog">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowCloseOnTouchOutside">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    <item name="android:windowExitAnimation">@anim/slide_right</item>
+  </style>
+
+  <style name="UnidealCardView">
+    <item name="android:background">@drawable/drw_card_background</item>
+    <item name="android:paddingRight">16dp</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:paddingBottom">8dp</item>
+    <item name="android:layout_marginTop">4dp</item>
+  </style>
+
+  <style name="UniDealTransactionCard">
+    <item name="android:background">@drawable/drw_card_background</item>
+    <item name="android:layout_marginTop">4dp</item>
+  </style>
+
+  <style name="UniDealWithDrawCard">
+    <item name="android:background">@drawable/drw_card_background</item>
+    <item name="android:layout_marginTop">7dp</item>
+  </style>
+
+  <style name="DialogThemeAgent" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">@color/colorCuriousBlue</item>
+  </style>
+
+  <style name="DialogThemeQuestioner" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">@color/colorPersianGreen</item>
+  </style>
+
+  <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">@color/colorOuterSpace</item>
+    <item name="android:textColorPrimary">@color/colorOuterSpace</item>
+  </style>
+
+
+  <style name="UniDealToolbar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/toolbar_height</item>
+    <item name="android:layout_centerHorizontal">true</item>
+    <item name="contentInsetLeft">0dp</item>
+    <item name="contentInsetStart">0dp</item>
+  </style>
+
+  <style name="UniDealToolbar.Questioner">
+    <item name="android:background">@color/colorPersianGreen</item>
+  </style>
+
+  <style name="UniDealToolbar.Agent">
+    <item name="android:background">@color/colorCuriousBlue</item>
+  </style>
+
+  <style name="ButtonAgent">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">48dp</item>
+    <item name="android:layout_marginLeft">28dp</item>
+    <item name="android:maxWidth">302dp</item>
+    <item name="android:layout_marginRight">28dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_agent</item>
+  </style>
+
+  <style name="ButtonDialogYes">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textSize">17sp</item>
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:maxWidth">222dp</item>
+    <item name="android:layout_height">51dp</item>
+    <item name="android:layout_marginLeft">56dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_marginRight">56dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_agent</item>
+  </style>
+
+  <style name="ButtonDialogYes.JobPostAccept">
+    <item name="android:background">@drawable/drw_button_post_questioner</item>
+  </style>
+
+  <style name="ButtonAgent.Delete">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">48dp</item>
+    <item name="android:layout_marginLeft">28dp</item>
+    <item name="android:maxWidth">302dp</item>
+    <item name="android:layout_marginRight">28dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_delete</item>
+  </style>
+
+  <style name="ButtonDialogNo">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textSize">17sp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:layout_height">51dp</item>
+    <item name="android:maxWidth">222dp</item>
+    <item name="android:layout_marginLeft">56dp</item>
+    <item name="android:layout_marginRight">56dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_delete</item>
+  </style>
+
+  <style name="ButtonDialogNo.JobPostReject">
+    <item name="android:background">@drawable/drw_button_reject_questioner</item>
+  </style>
+
+  <style name="JobDetailsButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:minWidth">200dp</item>
+    <item name="android:layout_marginLeft">28dp</item>
+    <item name="android:layout_marginRight">28dp</item>
+    <item name="android:paddingLeft">20dp</item>
+    <item name="android:paddingRight">20dp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_agent</item>
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textSize">17sp</item>
+  </style>
+
+  <style name="ButtonAgentQuestioner" parent="Base.Widget.AppCompat.Button">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">49dp</item>
+    <item name="android:layout_marginLeft">28dp</item>
+    <item name="android:maxWidth">302dp</item>
+    <item name="android:layout_marginRight">28dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/shape_gradient_button</item>
+  </style>
+
+  <style name="ButtonQuestioner" parent="Base.Widget.AppCompat.Button">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_height">49dp</item>
+    <item name="android:maxWidth">302dp</item>
+    <item name="android:layout_marginLeft">28dp</item>
+    <item name="android:layout_marginRight">28dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_questioner</item>
+  </style>
+
+  <style name="ButtonQuestioner.Cancel">
+    <item name="android:background">@drawable/drw_button_questioner_cancel</item>
+  </style>
+
+  <style name="TextInputStyle" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/colorSantasGray</item>
+    <item name="android:textColorHint">@color/colorSantasGray</item>
+    <item name="colorAccent">@color/colorSantasGray</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+
+  <style name="TextLabel" parent="TextAppearance.Design.Hint">
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="fontAvenirBook">
+    <item name="fontPath">@string/font_Avenir_Book</item>
+  </style>
+
+  <style name="fontAvenirHeavy">
+    <item name="fontPath">@string/font_Avenir_Heavy</item>
+  </style>
+
+  <style name="fontAvenirMedium">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+  </style>
+
+  <style name="fontAvenirSemibold">
+    <item name="fontPath">@string/font_Avenir_Semibold</item>
+  </style>
+
+
+  <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorColor">@color/colorWhite</item>
+    <item name="tabIndicatorHeight">2dp</item>
+    <item name="tabPaddingEnd">4dp</item>
+    <item name="tabPaddingStart">4dp</item>
+    <item name="tabMode">fixed</item>
+    <item name="tabBackground">?attr/selectableItemBackground</item>
+    <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    <item name="tabSelectedTextColor">@color/colorWhite</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="AgentTabLayoutStyle" parent="@style/TabLayoutStyle">
+    <item name="android:background">@color/colorPrimaryDark</item>
+  </style>
+
+  <style name="QuestionerTabLayoutStyle" parent="@style/TabLayoutStyle">
+    <item name="android:background">@color/colorPersianGreen</item>
+  </style>
+
+  <style name="Button">
+    <item name="android:height">@dimen/button_height</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">15sp</item>
+    <item name="android:minHeight">0dp</item>
+  </style>
+
+  <style name="Button.Delete">
+    <item name="android:background">@drawable/drw_button_cancel</item>
+    <item name="android:textColor">@color/colorWhite</item>
+  </style>
+
+  <style name="Button.Cancel">
+    <item name="android:background">@drawable/drw_button_cancel</item>
+    <item name="android:textColor">@color/colorWhite</item>
+  </style>
+
+  <style name="Button.Confirm"></style>
+
+  <style name="Button.Confirm.Agent">
+    <item name="android:background">@drawable/drw_button_ok_agent</item>
+    <item name="android:textColor">@color/colorWhite</item>
+  </style>
+
+  <style name="Button.Confirm.Questioner">
+    <item name="android:background">@drawable/drw_button_ok_requester</item>
+  </style>
+
+  <style name="Button.Decline">
+    <item name="android:background">@drawable/drw_button_ok_requester</item>
+    <item name="fontPath">@string/font_Avenir_Book</item>
+  </style>
+
+
+  <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">10sp</item>
+    <item name="android:textColor">@color/color_white_semitransparent</item>
+    <item name="textAllCaps">false</item>
+  </style>
+
+  <style name="JobCardStyle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">4dp</item>
+    <item name="cardCornerRadius">0dp</item>
+  </style>
+
+  <style name="AgentSwitch">
+    <item name="colorControlActivated">@color/colorCuriousBlue</item>
+  </style>
+
+  <style name="QuestionerSwitch">
+    <item name="colorControlActivated">@color/colorPersianGreen</item>
+  </style>
+
+
+  <style name="ActionButton">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:minWidth">210dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_action_pause</item>
+    <item name="android:textAllCaps">false</item>
+  </style>
+
+  <style name="DialogStyle" parent="Base.Theme.AppCompat.Dialog">
+    <item name="android:windowMinWidthMajor">97%</item>
+    <item name="android:windowMinWidthMinor">97%</item>
+  </style>
+
+  <style name="ActionButton.Pause">
+    <item name="android:background">@drawable/drw_action_pause</item>
+  </style>
+
+  <style name="ActionButton.complete">
+    <item name="android:background">@drawable/drw_action_complete</item>
+  </style>
+
+  <style name="ActionButton.sendProposal">
+    <item name="android:background">@drawable/drw_button_agent</item>
+  </style>
+
+  <style name="ActionButton.Withdraw">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:maxWidth">102dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_agent</item>
+  </style>
+
+  <style name="RatingBar" parent="@android:style/Widget.Holo.RatingBar.Small">
+    <item name="android:minHeight">16dp</item>
+    <item name="android:maxHeight">20dp</item>
+
+  </style>
+
+  <style name="RatingBar.Agent" >
+    <item name="android:progressDrawable">@drawable/ratingbar_progress_agent</item>
+  </style>
+
+  <style name="RatingBar.Questioner">
+    <item name="android:progressDrawable">@drawable/ratingbar_progress_questioner</item>
+  </style>
+
+  <style name="RatingBar.JobComplete">
+    <item name="android:progressDrawable">@drawable/ratingbar_progress_agent</item>
+  </style>
+
+  <style name="RatingBar.Large"></style>
+
+  <style name="RatingBar.Large.Agent">
+    <item name="android:progressDrawable">@drawable/ratingbar_progress_large_agent</item>
+  </style>
+
+  <style name="RatingBar.Large.Questioner">
+    <item name="android:progressDrawable">@drawable/ratingbar_progress_large_questioner</item>
+  </style>
+
+  <style name="ChatEditBox">
+    <item name="android:background">@drawable/drw_chat_edit_box_gb</item>
+    <item name="android:hint"></item>
+    <item name="android:maxHeight">@dimen/chat_edit_box_max_height</item>
+    <item name="android:maxLines">5</item>
+    <item name="android:minHeight">@dimen/chat_edit_box_min_height</item>
+  </style>
+
+  <style name="WithdrawBox">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">38dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_marginBottom">20dp</item>
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:background">@color/colorEditAmount</item>
+    <item name="android:maxWidth">100dp</item>
+    <item name="android:minWidth">100dp</item>
+    <item name="android:padding">5dp</item>
+    <item name="fontPath">@string/font_Avenir_Book</item>
+    <item name="android:maxLength">3</item>
+  </style>
+
+  <style name="UnidealRadioButtonAgent">
+    <item name="android:button">@null</item>
+    <item name="android:drawableLeft">@drawable/drw_english_chinese_selector</item>
+    <item name="android:drawablePadding">4dp</item>
+    <item name="fontPath">@style/fontAvenirBook</item>
+  </style>
+
+  <style name="UnidealRadioButtonQuestioner">
+    <item name="android:button">@null</item>
+    <item name="android:drawableLeft">@drawable/drw_english_chinese_selector_questioner</item>
+    <item name="android:drawablePadding">4dp</item>
+    <item name="fontPath">@style/fontAvenirBook</item>
+  </style>
+
+  <style name="UnidealRecyclerView">
+    <item name="android:clipToPadding">false</item>
+    <item name="android:paddingBottom">4dp</item>
+  </style>
+
+  <style name="ActionButton.Withdraw.questioner">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:maxWidth">102dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/drw_button_questioner</item>
+  </style>
+
+  <style name="ActionButton.Questioner">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="ActionButton.Questioner.Settings">
+    <item name="android:background">@drawable/drw_button_questioner</item>
+    <item name="android:text">@string/settings</item>
+  </style>
+
+  <style name="ActionButton.Chat">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:minWidth">110dp</item>
+    <item name="android:minHeight">36dp</item>
+  </style>
+
+  <style name="ActionButton.Chat.Accept">
+    <item name="android:background">@drawable/drw_accept</item>
+    <item name="android:text">Accept</item>
+  </style>
+
+  <style name="ActionButton.Chat.Hide">
+    <item name="android:background">@drawable/drw_hide</item>
+    <item name="android:text">Hide</item>
+  </style>
+
+  <style name="ButtonAgent.Filter.reset">
+    <item name="android:textSize">16sp</item>
+    <item name="android:background">@drawable/drw_button_delete</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:minWidth">130dp</item>
+    <item name="android:layout_marginLeft">0dp</item>
+    <item name="android:layout_marginRight">0dp</item>
+  </style>
+
+  <style name="ButtonAgent.Filter">
+    <item name="fontPath">@string/font_Avenir_Medium</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginRight">0dp</item>
+    <item name="android:minWidth">130dp</item>
+  </style>
+
+  <style name="FloatActionButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentBottom">true</item>
+    <item name="android:layout_alignParentRight">true</item>
+
+    <item name="android:scaleType">center</item>
+    <item name="backgroundTint">@color/colorPersianGreen</item>
+    <item name="fabSize">normal</item>
+    <item name="srcCompat">@drawable/ic_add_new_job</item>
+  </style>
+
+  <style name="SpinnerStyle">
+    <item name="android:background">@drawable/drw_spinner_background</item>
+  </style>
+
+  <style name="UniDealTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="CardEditTextStyle" parent="Widget.AppCompat.EditText">
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:background">@drawable/card_background</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:maxLines">1</item>
+  </style>
+
+  <style name="CardEditTextStyle.Credit">
+    <item name="android:inputType">number</item>
+    <item name="android:maxLength">19</item>
+  </style>
+
+  <style name="CardEditTextStyle.CardHolder">
+    <item name="android:inputType">text</item>
+    <item name="android:maxLength">10</item>
+  </style>
+
+  <style name="CardEditTextStyle.CardCVV">
+    <item name="android:inputType">number</item>
+    <item name="android:maxLength">4</item>
+  </style>
+
+  <style name="UniDealTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

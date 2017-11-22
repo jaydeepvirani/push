@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="AgentProfileBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.ProfileFragmentViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/UniDealToolbar.Agent"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center"
+          android:text="@string/title_profile"
+          android:textColor="@color/colorWhite"
+          android:textSize="18sp"
+          style="@style/fontAvenirMedium"
+          />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@id/toolBar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="24dp"
+          >
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/profilePhoto"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_centerInParent="true"
+              android:layout_marginTop="27dp"
+              />
+
+          <TextView
+              android:id="@+id/editProfileButton"
+              android:layout_width="80dp"
+              android:layout_height="32dp"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/drw_edit_profile_agent"
+              android:drawableLeft="@drawable/drw_edit_profile_layer"
+              android:drawableStart="@drawable/drw_edit_profile_layer"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:paddingStart="10dp"
+              android:text="@string/text_edit"
+              android:textColor="@color/colorWhite"
+              />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblFullName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:enabled="false"
+              android:hint="@string/hint_full_name"
+              android:maxLines="1"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/fullName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblFullName"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              tools:text="Lauren Smith"
+              style="@style/fontAvenirBook"
+              />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorSantasGray"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hint_email"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblEmail"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              tools:text="lauren@yopmail.com"
+              style="@style/fontAvenirBook"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblNumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hint_contact_number"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+          <TextView
+              android:id="@+id/number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblNumber"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberLayout"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/genderText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="27dp"
+              android:layout_marginStart="27dp"
+              android:text="@string/text_gender"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/genderSpinner"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/genderText"
+              android:layout_marginLeft="27dp"
+              android:layout_marginRight="27dp"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/favCatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblFavourable"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hint_favourable_category"
+              android:textAllCaps="true"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/favourableCategory"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblFavourable"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favCatLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblBio"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hint_text_bio"
+              android:textAllCaps="true"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+          <TextView
+              android:id="@+id/bio"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblBio"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/documentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bioLayout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/upLoadDocument"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginStart="30dp"
+              android:text="@string/text_documents"
+              />
+
+          <TextView
+              android:id="@+id/fileName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxLines="2"
+              android:textColor="@color/colorCuriousBlue"
+              tools:text="my_cv.pdf"
+              />
+
+          <ImageView
+              android:id="@+id/attachDocument"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginEnd="40dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginStart="10dp"
+              />
+
+        </LinearLayout>
+      </RelativeLayout>
+    </ScrollView>
+  </RelativeLayout>
+</layout>

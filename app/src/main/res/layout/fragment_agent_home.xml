@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+  <data class="AgentJobBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.AgentJobListFragmentViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWildSand"
+      >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/UniDealToolbar.Agent"
+        >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/application_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            style="@style/fontAvenirMedium"
+            />
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/drw_filter"
+            android:clickable="true"
+            android:contentDescription="@string/content_desc_filter"
+            />
+      </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_margin="6dp"
+        android:background="@drawable/drw_search_background"
+        >
+      <EditText
+          android:id="@+id/editTextSearch"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/ic_search_blue"
+          android:drawableStart="@drawable/ic_search_blue"
+          android:drawablePadding="11dp"
+          android:imeOptions="actionSearch"
+          android:inputType="text"
+          android:maxLines="1"
+          android:paddingLeft="11dp"
+          android:paddingRight="11dp"
+          android:textColor="@color/colorSpunPearl"
+          android:textColorHint="@color/colorSpunPearl"
+          android:textSize="16sp"
+          style="@style/fontAvenirBook"
+          />
+      <TextView
+          android:id="@+id/search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:layout_centerVertical="true"
+          android:padding="10dp"
+          android:text="@string/search"
+          android:visibility="gone"
+          />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/jobList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBar"
+        android:clipToPadding="false"
+        android:paddingBottom="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        >
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBar"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+  </RelativeLayout>
+
+</layout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="ProfileBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.QuestionerProfileViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWildSand"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorCerulean"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        >
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_bar_icon"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:text="@string/title_questioner_profile"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            style="@style/fontAvenirMedium"
+            />
+
+      </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/postLayout"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorWildSand"
+        android:scrollbars="none"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolBar"
+            android:background="@drawable/drw_card_background"
+            android:orientation="vertical"
+            >
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/profile_image"
+              android:layout_width="96dp"
+              android:layout_height="96dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="25dp"
+              />
+
+          <TextView
+              android:id="@+id/clientName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/colorShark"
+              android:textSize="17sp"
+              style="@style/fontAvenirMedium"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical|center_horizontal"
+              >
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                style="@style/RatingBar.Large.Questioner"
+                />
+
+            <TextView
+                android:id="@+id/jobCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorShark"
+                android:textSize="15sp"
+                style="@style/fontAvenirMedium"
+                />
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/completedJob"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/completed_jobs"
+            android:textColor="@color/colorShark"
+            android:textSize="14sp"
+            style="@style/fontAvenirMedium"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/JobList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UnidealRecyclerView"
+            />
+
+      </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        >
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          />
+    </RelativeLayout>
+  </RelativeLayout>
+</layout>

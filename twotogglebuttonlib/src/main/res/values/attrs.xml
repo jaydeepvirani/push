@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="MySwitchButton">
+    <attr format="string" name="leftText" />
+    <attr format="string" name="rightText" />
+    <attr format="dimension" name="textSize" />
+    <attr format="dimension" name="textPadding" />
+    <attr format="color" name="textCheckedColor" />
+    <attr format="color" name="textUnCheckedColor" />
+    <attr format="color" name="backRectColor" />
+  </declare-styleable>
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="LanguageBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.auth.viewmodel.LanguageActivityViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      >
+
+    <ImageView
+        android:id="@+id/uniDealLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_login_logo"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/langText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+      <TextView
+          android:id="@+id/textSelector"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="44dp"
+          android:text="@string/choose_a_language_to_continue"
+          android:textColor="@color/colorPersianGreen"
+          android:textSize="17sp"
+          style="@style/fontAvenirBook"
+          />
+
+      <!--<cn.schope.gongyasen.twotogglebuttonlib.MySpringSwitchButton-->
+      <!--android:id="@+id/msb"-->
+      <!--android:layout_width="100dp"-->
+      <!--android:layout_height="40dp"-->
+      <!--android:layout_below="@+id/textSelector"-->
+      <!--android:layout_centerHorizontal="true"-->
+      <!--app:backRectColor="@color/colorWhite"-->
+      <!--app:leftText="English"-->
+      <!--app:rightText="右侧文字"-->
+      <!--app:textCheckedColor="@color/colorPersianGreen"-->
+      <!--app:textSize="16sp"-->
+      <!--app:textUnCheckedColor="@android:color/white"-->
+      <!--/>-->
+
+      <RelativeLayout
+          android:id="@+id/msb"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textSelector"
+          android:gravity="center"
+          >
+
+        <View
+            android:id="@+id/viewLayout"
+            android:layout_width="115dp"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_language_button"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/english"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/english"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            style="@style/fontAvenirBook"
+            />
+
+        <Button
+            android:id="@+id/hongKong"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_toRightOf="@+id/english"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/text_hk"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPersianGreen"
+            android:textSize="20sp"
+            style="@style/fontAvenirBook"
+            />
+
+
+      </RelativeLayout>
+
+      <!--<android.support.design.widget.TabLayout-->
+      <!--android:id="@+id/tabLayout"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="40dp"-->
+      <!--android:layout_below="@id/textSelector"-->
+      <!--app:tabBackground="@drawable/drw_language_selected"-->
+      <!--app:tabIndicatorHeight="0dp"-->
+      <!--app:tabSelectedTextColor="@color/colorWhite"-->
+      <!--app:tabTextColor="@color/colorPersianGreen"-->
+      <!--/>-->
+
+      <TextView
+          android:id="@+id/detectText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/msb"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="44dp"
+          android:text="@string/or_detect_automatically"
+          android:textColor="@color/colorPersianGreen"
+          android:textSize="17sp"
+          style="@style/fontAvenirBook"
+          />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:onClick="@{viewmodel.moveToLoginScreen}"
+        app:srcCompat="@drawable/ic_next_button"
+        />
+
+
+  </RelativeLayout>
+</layout>

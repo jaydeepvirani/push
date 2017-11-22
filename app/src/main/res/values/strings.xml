@@ -1,0 +1,415 @@
+<resources>
+  <string name="unideal_app_name">UNIBuy</string>
+  <string name="application_name" translatable="false">UNIBuy</string>
+  <string name="text_remember_me">Keep me signed in</string>
+  <string name="text_new_to_unideal">New to UNIBuy ?&#160;</string>
+  <string name="text_forgot_password">Forgot Password ?</string>
+  <string name="text_login">Login</string>
+  <string name="text_password">PASSWORD</string>
+  <string name="hint_full_name">FULL NAME</string>
+  <string name="hint_email">EMAIL</string>
+  <string name="hint_contact_number">CONTACT NUMBER</string>
+  <string name="hint_referral_code">REFERRAL CODE</string>
+  <string name="text_gender">GENDER</string>
+  <string name="text_sign_up">Sign Up</string>
+  <string name="font_Avenir_Book" translatable="false">fonts/Avenir-Book.ttf</string>
+  <string name="font_Avenir_Heavy" translatable="false">fonts/Avenir-Heavy.otf</string>
+  <string name="font_Avenir_Medium" translatable="false">fonts/Avenir-Medium.otf</string>
+  <string name="font_Avenir_Semibold" translatable="false">fonts/Avenir-semibold.ttf</string>
+
+  <string name="tab_menu_english" translatable="false">English</string>
+  <string name="tab_menu_hong_kong" translatable="false">右侧文字</string>
+  <string name="job_center">Job Center</string>
+  <string name="dispute_center">Dispute Center</string>
+  <string name="settings">Settings</string>
+  <string name="title_login">Log In</string>
+  <string name="text_signup_here">Sign Up Here!</string>
+  <string name="dummy_description" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur fermentum, nunc ac venenatis mollis, orci lorem vestibulum nibh, a consectetur felis
+    sem vel magna. Phasellus rutrum semper bibendum. Proin posuere lacus eget magna pharetra, vel
+    vulputate mi consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+    ridiculus mus. Aliquam pharetra dui non lacus vulputate, ut finibus odio sollicitudin. Donec
+    viverra id nunc quis condimentum. Pellentesque nec justo sed diam bibendum suscipit ac ac dui.
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    Aliquam nec massa vitae eros cursus blandit. Mauris accumsan lectus mauris, in rhoncus arcu
+    pharetra et. Quisque aliquam rutrum sodales. Aliquam vel libero nulla.
+  </string>
+  <string name="dummy_title" translatable="false">what are different type of Taxations while implements 100 kgs iron?
+  </string>
+
+  <!-- Tab Title List -->
+  <string name="tab_title_applied">Applied</string>
+  <string name="tab_title_in_progress">In Progress</string>
+  <string name="tab_title_completed">Completed</string>
+  <string name="tab_title_paused">Paused</string>
+  <string name="tab_title_cancelled">Cancelled</string>
+  <string name="text_open_camera">Open Camera</string>
+  <string name="text_choose_from_library">Choose From Library</string>
+  <string name="hint_enter_new_password">Enter New Password</string>
+  <string name="hint_confirm_new_password">Confirm New Password</string>
+  <string name="hint_old_password">Old Password</string>
+  <string name="text_reset_password">Submit</string>
+  <string name="dummy_consignment_size" translatable="false">60 HK$</string>
+  <string name="btn_apply_job">Apply</string>
+  <string name="btn_send">Send</string>
+  <string name="proposal_sub_title">Add your Proposal Message</string>
+  <string name="proposal_title">Proposal</string>
+  <string name="details">"Details"</string>
+  <string name="dummy_text_long" translatable="false">Please select your photo</string>
+  <string name="ok">OK</string>
+  <string name="btn_cancel">Cancel</string>
+  <string name="refer_code_share_text">Hello ! Have you tried the UNIBuy App? It provides you a platform to request &amp; resolve jobs. Use my Promo-code %1$s to get benefits. Download it from here:\n%2$s\n%3$s</string>
+  <string name="title_app_name" translatable="false">UNIBuy</string>
+  <string name="btn_ok">OK</string>
+  <string name="btn_resend">Resend</string>
+  <string name="msg_please_wait">Please wait</string>
+  <string name="please_try_again">Please try again</string>
+  <string name="message_storage_permission">Storage Permission</string>
+  <string name="title_ratings">Ratings</string>
+  <string name="title_my_jobs">My Jobs</string>
+  <string name="title_my_jobs_agent">My Jobs</string>
+
+  <string name="dummy_date" translatable="false">08 Oct 2016</string>
+  <string name="notif_note_1">One new Job has been added to the topic \'Finance\'</string>
+  <string name="notif_note_2">Your request for Job #672 has been accepted by the Requester</string>
+  <string name="notif_note_3">Job #877 is will be completed soon, please clear payments with the
+    Requester
+  </string>
+  <string name="notif_note_4">Amount has been transferred in your UNIBuy Wallet.</string>
+  <string name="notif_note_5">Adam Lyth has paused the Job #675</string>
+  <string name="title_notification_empty">Notifications</string>
+  <string name="title_notification">Notifications (%1$d)</string>
+  <string name="message_center">Message Center</string>
+  <string name="decline">Decline</string>
+  <string name="message_cancelled_job">This job is in cancelled Mode. You would no longer being
+    continue on it.
+  </string>
+
+  <string name="dummy_terms" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur fermentum, nunc ac venenatis mollis, orci lorem vestibulum nibh, a consectetur felis
+    sem vel magna. Phasellus rutrum semper bibendum. Proin posuere lacus eget magna pharetra, vel
+    vulputate mi consectetur.
+  </string>
+  <string name="message_completed_job">This job has been completed.
+  </string>
+  <string name="message_paused_job">This job is in paused mode by either client or you. For Re-activate it use below option.
+  </string>
+  <string name="message_dispute_job">This job has been in dispute mode by either client or you. For more kindly please contact to an admin.
+  </string>
+  <string name="re_active_job">Re-Active Job</string>
+  <string name="title_settings">Settings</string>
+  <string name="text_log_out">Log Out</string>
+  <string name="text_switch_to_questioner">Switch to Requester</string>
+  <string name="text_switch_to_agent">Switch to Agent</string>
+  <string name="text_manage_credit_card">Manage Credit Card</string>
+  <string name="text_english_checkbox" translatable="false">English</string>
+  <string name="text_chinese" translatable="false">中文</string>
+  <string name="title_job_status">Job Status</string>
+  <string name="transaction">Transactions</string>
+  <string name="app_tour_guide">App Tour Guide</string>
+  <string name="text_manage_notifications">Manage Notifications</string>
+  <string name="text_expert_topic">New Post in Expertise Location</string>
+  <string name="text_consignment_size">Budget</string>
+  <string name="text_agent_commission">Agent Commission</string>
+  <string name="description">Description:</string>
+  <string name="text_delete_account">Delete Account</string>
+  <string name="btn_delete">Delete</string>
+  <string name="title_job_center">Job Center</string>
+  <string name="title_dispute_center">Dispute Center</string>
+  <string name="title_msg_center">Message Center</string>
+  <string name="dummy_chat_message" translatable="false">Hello I am no coming here\n would like to tell me the truth it
+    whart
+  </string>
+  <string name="text_send">Send</string>
+  <string name="title_profile">Profile</string>
+  <string name="text_edit_profile">Edit Profile</string>
+  <string name="hint_text_expertise">Expertise:</string>
+  <string name="hint_favourable_category">Favourable Location</string>
+  <string name="hint_text_bio">Bio</string>
+  <string name="text_cancel">Cancel</string>
+  <string name="text_submit">Submit</string>
+  <string name="rtm_storage_permission">Storage Permission</string>
+  <string name="title_earnings">Earnings</string>
+  <string name="sub_title_transaction_history">Transaction History</string>
+  <string name="msg_transaction_received">Received amount for completing Job #%s</string>
+  <string name="msg_transaction_withdraw">Withdraw amount for earnings</string>
+  <string name="msg_transaction_deducted">Deducted amount for leaving Job #%s</string>
+  <string name="title_referralcode">Referral Code</string>
+  <string name="text_get_benifits">Get Benefits</string>
+  <string name="text_share_code">Share this code with your friends and</string>
+  <string name="text_get_benifits_in_jobs">get benefits in your jobs when they</string>
+  <string name="text_sign_up_using_your_code">sign up using your code</string>
+  <string name="text_share_your_code">Share your Code</string>
+  <string name="text_share">Share</string>
+  <string name="text_documents">Documents:</string>
+  <string name="text_withdraw">Withdraw</string>
+  <string name="text_withdraw_notes">* Minimum redeemable Amount is 100 HK$</string>
+  <string name="text_my_earnings">My Earnings :</string>
+  <string name="bank_1" translatable="false">Bank of Hong Kong(47-*********26)</string>
+  <string name="bank_2" translatable="false">Bank of Asia(47-*********26)</string>
+  <string name="title_withdraw">Withdraw</string>
+  <string name="promo_balance">Promo Balance</string>
+  <string name="message_delete_account">Are you sure, you want to delete account?</string>
+  <string name="message_switch_account">Are you sure, you want to switch account?</string>
+  <string name="switch_to_questioner">Switch to Requester?</string>
+  <string name="switch_to_agent">Switch to Agent?</string>
+  <string name="category">Items location</string>
+  <string name="title_category">Items location</string>
+  <string name="title_sub_category">Items category</string>
+  <string name="message_log_out">Are you sure, you want to log out?</string>
+  <string name="text_complete_job">Are you sure you want to mark this job as completed?</string>
+  <string name="text_yes">Yes</string>
+  <string name="text_no">No</string>
+  <string name="title_rate_the_agent">Great! Rate the Agent!</string>
+  <string name="title_rate_the_requester">Great! Rate the Requester!</string>
+  <string name="permission_request">Permission Request</string>
+  <string name="title_messages">Messages (%1$d)</string>
+  <string name="title_messages_empety">Messages</string>
+  <string name="title_new_job">New Job</string>
+  <string name="hint_job_details">Items description</string>
+  <string name="hint_consignment_size">HKD Budget (Optional, For agent Reference)</string>
+  <string name="hint_agent_fee">AGENT FEE</string>
+  <string name="hint_completion_date_time">COMPLETION DATE TIME</string>
+  <string name="hint_quantity">QUANTITY</string>
+  <string name="hint_promotional_code">PROMOTIONAL CODE</string>
+  <string name="text_post">Post</string>
+  <string name="text_clear">Clear</string>
+  <string name="title_terms_conditions">Terms &amp; Conditions</string>
+  <string name="text_accept">Accept</string>
+  <string name="text_decline">Decline</string>
+  <string name="text_reject">Hide</string>
+  <string name="applicantSize">Applicant(%d)</string>
+  <string name="applicantsSize">Applicants(%d)</string>
+  <string name="title_questioner_agent_profile">Agent Profile and Offer</string>
+  <string name="title_help">Help</string>
+  <string name="title_spend">My Spends</string>
+  <string name="title_transaction">Transactions</string>
+  <string name="amount_message">Enter Amount Must be 3 digit</string>
+  <string name="consignment_size_price" translatable="false">%s HK$</string>
+  <string name="agent_price" translatable="false">%d HK$</string>
+  <string name="agent_price_float" translatable="false">%s HK$</string>
+  <string name="suffix_currency" translatable="false"> HK$</string>
+  <string name="title_bank_account_info">Manage Bank Account</string>
+  <string name="emptyText">No Bank Account</string>
+  <string name="add_new_bank">Add new Bank</string>
+  <string name="no_data_available">No data available</string>
+  <string name="name_of_bank">Name of bank</string>
+  <string name="account_number">Account Number</string>
+  <string name="created_on">Created On</string>
+  <string name="swiftcode">Swift Code</string>
+  <string name="add_account">Add account</string>
+  <string name="enteraccount">Enter bank account having 16 character length</string>
+  <string name="enterswiftcode">Enter swift code</string>
+  <string name="title_job_id" translatable="false"># %s</string>
+  <string name="action_pause">Pause</string>
+  <string name="action_complete">Complete</string>
+  <string name="action_resume">Resume</string>
+  <string name="dialog_title_complete_job">Are you sure you want to mark this job as completed?
+  </string>
+  <string name="dialog_title_pause_job">Are you sure you want to mark this job as paused?</string>
+  <string name="dialog_title_re_activate">Are you sure you want to Resume this job?</string>
+  <string name="text_swipe_left">Swipe Left to Hide</string>
+  <string name="text_swipe_right">Swipe Right to Accept</string>
+  <string-array name="bank_options">
+    <item>Bank of China (Hong Kong)</item>
+    <item>Bank of East Asia</item>
+    <item>The China CITIC Bank International</item>
+    <item>China Construction Bank (Asia)</item>
+    <item>Chiyu Banking Corporation</item>
+    <item>Chong Hing Bank</item>
+    <item>Citibank (Hong Kong)</item>
+    <item>Dah Sing Bank</item>
+    <item>DBS Bank (Hong Kong)</item>
+    <item>Fubon Bank (Hong Kong)</item>
+    <item>Hang Seng Bank</item>
+    <item>Hongkong and Shanghai Banking Corporation</item>
+    <item>Industrial and Commercial Bank of China (Asia)</item>
+    <item>Nanyang Commercial Bank</item>
+    <item>OCBC Wing Hang Bank</item>
+    <item>Public Bank (Hong Kong)</item>
+    <item>Shanghai Commercial Bank</item>
+    <item>Standard Chartered Bank (Hong Kong)</item>
+    <item>Tai Sang Bank</item>
+    <item>Tai Yau Bank</item>
+    <item>Wing Lung Bank</item>
+    <item>other</item>
+  </string-array>
+
+  <string name="total_applicant">%d Applicant</string>
+  <string name="total_applicants">%d Applicants</string>
+  <string name="hint_new_password">New Password</string>
+  <string name="hint_retype_password">Retype Password</string>
+  <string name="text_edit">Edit</string>
+  <string name="ddmmyy" translatable="false">DD/MM/YYYY</string>
+  <string name="filters">Filters</string>
+  <string name="posting_date">Posting Date</string>
+  <string name="expiry_date">Expiry Date</string>
+  <string name="fee_range">Budget Range</string>
+  <string name="reset">Reset</string>
+  <string name="date_validation_message">Please Enter Valid Expiry date and posting date</string>
+  <string name="select_posting_date">Please select posting date</string>
+  <string name="select_expiry_date">Please select expiry date</string>
+  <string name="select_valid_posting_date">Please select valid posting date</string>
+  <string name="select_valid_expiry_date">Please select valid expiry date</string>
+  <string name="select_category">Select Items location</string>
+  <string name="select_sub_category">Select Items category</string>
+  <string name="text_confirm_password">CONFIRM PASSWORD</string>
+  <string name="questioner">Requester</string>
+  <string name="text_req_rating">Requester Gets</string>
+  <string name="txt_agt_rating">Agent Gets</string>
+  <string name="text_yougets">You Get</string>
+  <string name="text_agent">Agent Rating</string>
+  <string name="text_hk" translatable="false">中文</string>
+  <string name="title_unideal_disclaimer" translatable="false">UNIBuy Disclaimer</string>
+  <string name="title_questioner_profile">Requester Profile</string>
+  <string name="title_home">Home</string>
+  <string name="title_refer_my_code">Refer My Code</string>
+  <string name="title_switch_to_questioner">Switch to Requester</string>
+  <string name="title_switch_to_agent">Switch to Agent</string>
+  <string name="text_enter_amount">Enter Amount:</string>
+  <string name="open">Open</string>
+  <string name="applie">Applied</string>
+  <string name="in_progress">In Process</string>
+  <string name="completed">Completed</string>
+  <string name="paused">Paused</string>
+  <string name="cancelled">Cancelled</string>
+  <string name="applicant">Applicant</string>
+  <string name="applicants">Applicants</string>
+  <string name="average_ratting">Average Ratings:</string>
+  <string name="empety_proposal_message">Proposal Message Should Not Empty</string>
+  <string name="agent">Agent</string>
+  <string name="forgot_password">Forgot Password</string>
+  <string name="txt_male">Male</string>
+  <string name="txt_female">Female</string>
+  <string name="enter_your_messaage">Enter your Message</string>
+  <string name="messages">Messages</string>
+  <string name="alert_password_match">Password And Confirm Password Should be same</string>
+  <string name="alert_internal_exception">Internal Exception</string>
+  <string name="alert_request_retry">Internal problem is occurred. kindly please try again.</string>
+  <string name="alert_connectivity_problem">Internet Connectivity Problem</string>
+  <string name="alert_time_out">Server TimeOut</string>
+  <string name="alert_unknown_exception">Unknown Exception</string>
+  <string name="resend">Resend</string>
+  <string name="accept_terms_condition">Accept terms and condition</string>
+  <string name="btn_text_applied">Applied</string>
+  <string name="txt_enterbank_name">Enter bank account name</string>
+  <string name="category_default">Items location</string>
+  <string name="favourable_default">Select favourable category</string>
+  <string name="sub_category_default">Items category</string>
+  <string name="comodity">Comodity</string>
+  <string name="text_refresh">Refresh</string>
+
+  <string name="time_ago_seconds">few seconds ago</string>
+  <string name="time_remaining_seconds">few seconds left</string>
+  <string name="time_ago_minutes">%d minutes ago</string>
+  <string name="time_remaining_minutes">%d minutes left</string>
+  <string name="time_ago_minute">%d minute ago</string>
+  <string name="time_remaining_minute">%d minute left</string>
+  <string name="time_ago_hour">%d hour ago</string>
+  <string name="time_remain_hour">%d hour left</string>
+  <string name="time_ago_hours">%d hours ago</string>
+  <string name="time_remain_hours">%d hours left</string>
+  <string name="time_day_ago">%d days ago</string>
+  <string name="time_day_left">%d days left</string>
+  <string name="action_settings">Settings</string>
+  <string name="no_rating_available">No ratings available</string>
+  <string name="no_refrcode_avalable">No refrral code available</string>
+  <string name="no_internet_available" translatable="false">Internet Connectivity Problem</string>
+  <string name="no_completed_jos">No Completed Jobs</string>
+  <string name="content_desc_filter">Filter</string>
+  <string name="choose_a_language_to_continue" translatable="false">Choose a language to continue</string>
+  <string name="edit_profile">Edit Profile</string>
+  <string name="english" translatable="false">English</string>
+  <string name="or_detect_automatically" translatable="false">Or Detect Automatically</string>
+  <string name="completed_jobs">Completed Jobs</string>
+  <string name="bio">Bio:</string>
+  <string name="enter_bank_name">Enter bank name</string>
+  <string name="documents">Documents:</string>
+  <string name="expertise">Expertise</string>
+  <string name="enter_amount">Enter Amount:</string>
+  <string name="search">Search</string>
+  <string name="error_agent_fee_valid" formatted="false">Agent fee must be between %d to %d.</string>
+  <string name="error_agent_fee">Agent fee could not be greater than budget.</string>
+  <string name="contact_us">Contact Us</string>
+  <string name="termsNCondition">Terms and Conditions</string>
+  <string name="delivery_place">DELIVERY PLACE / METHOD</string>
+  <string name="hint_birthdate">date of birth</string>
+  <string name="error_job_not_found">Job detail not found</string>
+  <string name="error_thread_id">Thread id is empty</string>
+  <string name="content_desc_message">Image message</string>
+  <string name="hint_agent_offer_price">Offer Price</string>
+  <string name="hint_delivery_place">Type Delivery Place</string>
+  <string name="text_delivery_place">Delivery Place:</string>
+  <string name="text_place_unideal">UNIBuy</string>
+  <string name="text_place_custom">Custom</string>
+  <string name="hint_card_number">Credit/Debit Card Number</string>
+  <string name="card_holder_name">Card Holder Name</string>
+  <string name="card_cvv_number">CVV</string>
+  <string name="card_first_name">First Name</string>
+  <string name="card_last_name">Last Name</string>
+
+  <string name="error_pay_not_card">Enter the card number</string>
+  <string name="error_pay_not_valid_card">Card is not valid</string>
+  <string name="error_pay_not_valid_cvv">CVV is not valid</string>
+  <string name="error_pay_holder_name">Please provide first/last name</string>
+  <string name="error_pay_car_expire">Card is expire</string>
+  <string name="dummy_card_number" translatable="false">xxxxxxxxxxxx0331</string>
+  <string name="title_card_details">Credit Card Details</string>
+  <string name="award_job_message">Do you want to modify the budget before awarding the Job?\n\nNo ~ award the job with Agent\'s offer price\nYes ~ suggest a counter offer price\nCancel ~ make decision later\n</string>
+  <string name="btn_yes">Yes</string>
+  <string name="btn_no">No</string>
+  <string name="btn_submit">Submit</string>
+  <string name="error_consignment_size">Please enter budget</string>
+  <string name="msg_proposal">Please enter proposal message</string>
+  <string name="error_number_format">Please enter valid number</string>
+  <string name="invoice_text">Invoice?</string>
+  <string name="error_consignment_size_not_avl">Budget not found, please try again&#8230;</string>
+  <string name="title_agent_offer">Requester offer on #%2d</string>
+  <string name="error_consignment_size_diff">Budget offer price should be different.</string>
+  <string name="error_vault_card_list">No card found. Click on add option for add a new card</string>
+  <string name="error_vault_delete_card">Are you sure want to remove the card?</string>
+  <string name="btn_need">Yes</string>
+  <string name="btn_not_required">No</string>
+  <string name="btn_skip">Skip</string>
+  <string name="btn_next">Next</string>
+  <string name="btn_go">Go</string>
+
+  <string name="walkthrough_text1">Post the items you require with a budget or Search and apply the post you&#8217;re interested in</string>
+  <string name="walkthrough_text2">Connect with each other &amp; communicate directly through our message center</string>
+  <string name="walkthrough_text3">Get your required job done at UNIBuy Center or at custom delivery place</string>
+  <string name="walkthrough_text4">Share , Share a new way of getting your job done</string>
+  <string name="error_default_card">Kindly add Credit Card details before creating new Job.</string>
+  <string name="error_default_card_award_job">Kindly add Credit Card details before award Job.</string>
+  <string name="title_unideal_delivery_place">UNIBuy Delivery Place</string>
+  <string name="total_spend" translatable="false">%d HK$</string>
+  <string name="text_invoice">Required Invoice:</string>
+  <string name="text_waiting_confirmation">Waiting for confirmation</string>
+  <string name="text_confirmation_required">Confirmation Required</string>
+  <string name="text_user_name_me">Me</string>
+  <string name="hint_job_title">Items name</string>
+  <string name="btn_verify">Verify</string>
+  <string name="btn_remove">Remove</string>
+  <string name="text_offer_price">Offer price:</string>
+  <!--Show Case Layout Text-->
+  <string name="txt_show_case_new_job">Start Your First Post and Look for agents to get your required items</string>
+  <string name="txt_show_case_job_details">Input your buying details and let the agent find your request easily</string>
+  <string name="txt_show_case_appplicant">You can check your Job’s Applicants Here</string>
+  <string name="txt_show_case_agent_profile">Check your Agent’s Profile and their offer before accepting it</string>
+  <string name="txt_show_case_que_menu">More actions can be found here</string>
+  <string name="txt_show_case_que_msg">Check your message history between you and your agents</string>
+  <string name="txt_show_case_que_profile">Edit your profile and let your agents know more about you</string>
+  <string name="txt_show_case_que_switch_ac">You can switch your role as agent and start earn some money</string>
+  <string name="txt_show_case_agt_filter_job">Filter the Jobs list and look for the jobs that fits you</string>
+  <string name="txt_show_case_agt_add_card">Please input your Credit Card before accepting your agentsNo service charge until your job is completed</string>
+  <string name="txt_show_case_que_refer_code">Share "UNIBuy" to your friends and you may get cash bonus</string>
+  <string name="txt_edit_offer">Edit</string>
+  <string name="text_modify">Modify</string>
+  <string name="txt_setting_torguide">You can close the App Tour Guide in Settings</string>
+  <string name="title_offer_title">View Details</string>
+  <string name="budget_price">%.2f</string>
+  <string name="text_continue">Continue</string>
+  <string name="text_email_no_available">UNIBuy will keep update you on your email address but unfortunately currently we can&#8217;t find your email address for the same. Please update go into a edit profile section.</string>
+  <string name="post_new_job">Post New Job</string>
+    <string name="grant_access_text">You need to grant access to</string>
+
+</resources>

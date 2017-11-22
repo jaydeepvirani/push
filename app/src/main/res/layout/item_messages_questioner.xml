@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+  <data class="ItemMessageBinding">
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.questioner.viewmodel.QuestionerMessagesItemViewModel"
+        />
+  </data>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingEnd="9dp"
+      android:paddingLeft="17dp"
+      android:paddingRight="9dp"
+      android:paddingStart="17dp"
+      >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="6dp"
+        android:src="@color/colorAlto"
+        app:imageUrl="@{viewmodel.agentProfilePic}"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="13dp"
+        android:paddingTop="15dp"
+        >
+      <android.support.percent.PercentRelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <TextView
+            android:id="@+id/clientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@{viewmodel.agentName}"
+            android:textColor="@color/colorShark"
+            android:textSize="15sp"
+            app:layout_widthPercent="60%"
+            tools:text="Mark Park"
+            style="@style/fontAvenirMedium"
+            />
+        <TextView
+            android:id="@+id/jobId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/clientName"
+            android:gravity="center"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:text="@{viewmodel.jobId}"
+            android:textColor="@color/colorShark"
+            android:textSize="15sp"
+            tools:text="#345"
+            style="@style/fontAvenirMedium"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@{viewmodel.jobType}"
+            />
+
+      </android.support.percent.PercentRelativeLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:maxLines="2"
+          android:text="@{viewmodel.shortMessage}"
+          android:textColor="@color/colorShark"
+          android:textSize="15sp"
+          android:visibility="@{viewmodel.isTextMsg}"
+          tools:text="It's been quit a while we have not workedIt's been quit a while we have not workedIt's been quit a while we have not workedIt's been quit a while we have not worked"
+          tools:visibility="visible"
+          style="@style/fontAvenirBook"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/drw_msg_image_type"
+          android:drawablePadding="5dp"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:maxLines="2"
+          android:text="Images"
+          android:textColor="@color/colorShark"
+          android:textSize="15sp"
+          android:visibility="@{viewmodel.isAttachment}"
+          tools:visibility="visible"
+          style="@style/fontAvenirBook"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+</layout>

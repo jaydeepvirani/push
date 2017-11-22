@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="QuestionerRatingHeaderBinding"/>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorWildSand"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingBottom="13dp"
+      android:paddingTop="13dp"
+      >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/average_ratting"
+        android:textColor="@color/colorShark"
+        android:textSize="15sp"
+        style="@style/fontAvenirMedium"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        style="@style/RatingBar.Large.Questioner"
+        />
+
+    <TextView
+        android:id="@+id/noOfRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorShark"
+        android:textSize="15sp"
+        tools:text="(26)"
+        style="@style/fontAvenirMedium"
+        />
+  </LinearLayout>
+
+</layout>

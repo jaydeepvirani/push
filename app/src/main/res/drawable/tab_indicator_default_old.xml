@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <bitmap android:src="@drawable/tab_indicator_default"/>
+    <shape>
+      <size
+          android:height="16dp"
+          android:width="16dp"/>
+    </shape>
+  </item>
+</layer-list>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="AgentBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.AgentSignUpFragmentViewModel"
+        />
+  </data>
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      android:scrollbars="none"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        >
+
+
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/fullNameLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/profilePhoto"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:layout_marginTop="25dp"
+          android:textColorHint="@color/colorSantasGray"
+          app:hintTextAppearance="@style/TextInputStyle"
+          >
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_full_name"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:textColor="@color/colorShark"
+            android:textColorHighlight="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+      </android.support.design.widget.TextInputLayout>
+
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/emailLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/fullNameLayout"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:textColorHint="@color/colorSantasGray"
+          app:hintTextAppearance="@style/TextInputStyle"
+          >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/colorShark"
+            android:textColorHighlight="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/passwordLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/emailLayout"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:textColorHint="@color/colorSantasGray"
+          app:hintTextAppearance="@style/TextInputStyle"
+          app:passwordToggleDrawable="@drawable/ic_password_agent"
+          app:passwordToggleTint="@color/colorCuriousBlue"
+          >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorShark"
+            android:textColorHighlight="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+      </android.support.design.widget.TextInputLayout>
+
+
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/confirmPasswordLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/passwordLayout"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:textColorHint="@color/colorSantasGray"
+          app:hintTextAppearance="@style/TextInputStyle"
+          app:passwordToggleDrawable="@drawable/ic_password_agent"
+          app:passwordToggleTint="@color/colorCuriousBlue"
+          >
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_confirm_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingBottom="15dp"
+            android:textColor="@color/colorShark"
+            android:textColorHighlight="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+      </android.support.design.widget.TextInputLayout>
+
+      <TextView
+          android:id="@+id/numberText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/confirmPasswordLayout"
+          android:layout_marginLeft="31dp"
+          android:layout_marginStart="31dp"
+          android:text="@string/hint_contact_number"
+          android:textColorHint="@color/colorPersianGreen"
+          android:textSize="12sp"
+          style="@style/fontAvenirBook"
+          />
+
+      <com.android.unideal.util.PrefixEditText
+          android:id="@+id/number"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/numberText"
+          android:layout_marginEnd="27dp"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:layout_marginStart="27dp"
+          android:inputType="numberDecimal"
+          android:maxLength="8"
+          android:maxLines="1"
+          android:tag="+852 "
+          android:textColor="@color/colorShark"
+          android:textColorHighlight="@color/colorSantasGray"
+          android:textSize="12sp"
+          style="@style/fontAvenirBook"
+          />
+
+      <TextView
+          android:id="@+id/genderText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/number"
+          android:layout_marginLeft="31dp"
+          android:layout_marginStart="31dp"
+          android:text="@string/text_gender"
+          android:textColorHint="@color/colorPersianGreen"
+          android:textSize="12sp"
+          style="@style/fontAvenirBook"
+          />
+
+      <Spinner
+          android:id="@+id/genderSpinner"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/genderText"
+          android:layout_marginEnd="31dp"
+          android:layout_marginLeft="31dp"
+          android:layout_marginRight="31dp"
+          android:layout_marginStart="31dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
+          style="@style/SpinnerStyle"
+          />
+
+      <LinearLayout
+          android:id="@+id/referralLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/genderSpinner"
+          android:layout_marginEnd="27dp"
+          android:layout_marginRight="27dp"
+          android:orientation="horizontal"
+          >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/editTextReferral"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_referral_code"
+              android:inputType="text"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+          <TextView
+              android:id="@+id/editTextMessage"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/app_name"
+              android:textSize="10sp"
+              android:visibility="gone"
+              tools:text="@string/unideal_app_name"
+              />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="55dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@drawable/drw_verification"
+            android:text="@string/btn_verify"
+            android:textColor="@color/colorPersianGreen"
+            android:textSize="11sp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/drw_promocode_cancel"
+            android:textColor="@color/colorRed"
+            android:textSize="11sp"
+            android:visibility="gone"
+            />
+      </LinearLayout>
+
+      <RelativeLayout
+          android:id="@+id/termsAndConditionLAyout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/referralLayout"
+          android:layout_marginLeft="27dp"
+          android:layout_marginRight="27dp"
+          android:layout_marginTop="7dp"
+          android:textColorHint="@color/colorSantasGray"
+          app:hintTextAppearance="@style/TextInputStyle"
+          >
+
+        <CheckBox
+            android:id="@+id/termsAndCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:button="@drawable/drw_remember_me_selector"
+            android:paddingLeft="5dp"
+            android:text="@string/accept_terms_condition"
+            android:textColor="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_below="@+id/termsAndConditionLAyout"
+          android:layout_marginTop="22dp"
+          >
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:text="@string/text_sign_up"
+            android:textSize="17sp"
+            style="@style/ButtonAgent"
+            />
+      </RelativeLayout>
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/profilePhoto"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_below="@+id/socialMedia"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="10dp"
+          android:layout_marginTop="27dp"
+          app:srcCompat="@drawable/ic_camera_agent"
+          />
+    </RelativeLayout>
+  </ScrollView>
+</layout>

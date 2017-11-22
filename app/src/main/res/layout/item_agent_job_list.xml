@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="ItemAgentListBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.AgentJobListItemViewModel"
+        />
+  </data>
+
+
+  <LinearLayout
+      android:id="@+id/statusTab"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/drw_card_background"
+      android:baselineAligned="false"
+      android:clipToPadding="false"
+      android:minHeight="0dp"
+      android:orientation="horizontal"
+      android:padding="0dp"
+      android:paddingEnd="8dp"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingStart="0dp"
+      android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/jobThumbImage"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_alignParentLeft="false"
+          android:layout_alignParentTop="false"
+          android:layout_gravity="center_vertical"
+          android:padding="5dp"
+          android:paddingBottom="5dp"
+          android:paddingRight="5dp"
+          app:imageUrl="@{viewmodel.imageUrl}"
+          app:srcCompat="@drawable/unibuy_logo_items" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+
+          >
+
+        <TextView
+            style="@style/fontAvenirHeavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@{viewmodel.jobType}"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:textViewColor="@{viewmodel.jobTypeColor}"
+            tools:text="Taxation" />
+
+        <TextView
+            style="@style/fontAvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:text="@{viewmodel.noOfApplication}"
+            android:textColor="@color/colorShark"
+            android:textSize="12sp"
+            tools:text="#234" />
+
+        <TextView
+            style="@style/fontAvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@{viewmodel.jobId}"
+            android:textColor="@color/colorShark"
+            android:textSize="12sp"
+            tools:text="#234" />
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="9dp"
+          android:minHeight="45dp"
+          android:orientation="vertical"
+
+          >
+
+        <TextView
+            style="@style/fontAvenirMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:text="@{viewmodel.question}"
+            android:textColor="@color/colorShark"
+            android:textSize="15sp"
+            tools:text="What are different types of taxation in the country?" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="9dp"
+
+          >
+        <TextView
+            style="@style/fontAvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/drw_client"
+            android:drawablePadding="9dp"
+            android:drawableStart="@drawable/drw_client"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@{viewmodel.clientName}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="10sp"
+            tools:text="Taxation" />
+        <TextView
+            android:id="@+id/price"
+            style="@style/fontAvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/drw_job_budget"
+            android:drawablePadding="9dp"
+            android:drawableStart="@drawable/drw_job_budget"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:layout_weight="1"
+
+            android:text="@{viewmodel.jobPrice}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="10sp"
+            tools:text="25.0 HK$" />
+        <TextView
+            style="@style/fontAvenirBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/drw_job_end_date"
+            android:drawablePadding="9dp"
+            android:drawableStart="@drawable/drw_job_end_date"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:text="@{viewmodel.endDate}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="10sp"
+            tools:text="2017-05-10 15:11" />
+
+
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+</layout>

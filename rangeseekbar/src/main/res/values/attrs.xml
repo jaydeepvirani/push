@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="RangeSeekBar">
+    <!-- the minimum of the range -->
+    <attr format="integer|float" name="absoluteMinValue"/>
+
+    <!-- the maximum of the range -->
+    <attr format="integer|float" name="absoluteMaxValue"/>
+
+    <!-- show a single slider -->
+    <attr format="boolean" name="singleThumb"/>
+
+    <!-- show the labels on the right and left-->
+    <attr format="boolean" name="showLabels"/>
+
+    <!-- alwaysActive will make the buttons and bar always draw as the activeColor (the default is false) -->
+    <attr format="boolean" name="alwaysActive"/>
+
+    <!-- show the currently selected value above each thumb (defaults to true) -->
+    <attr format="boolean" name="valuesAboveThumbs"/>
+
+    <!-- padding on either side on the slider -->
+    <attr format="dimension" name="internalPadding"/>
+
+    <!-- the height of the bar -->
+    <attr format="dimension" name="barHeight"/>
+
+    <!-- the color of the bar that is not selected -->
+    <attr format="color" name="defaultColor"/>
+
+    <!-- the color of the bar that is selected -->
+    <attr format="color" name="activeColor"/>
+
+    <!-- the color of the text above thumbs -->
+    <attr format="color" name="textAboveThumbsColor"/>
+
+    <!-- set drawables for thumb handles -->
+    <attr format="reference" name="thumbNormal"/>
+    <attr format="reference" name="thumbPressed"/>
+    <attr format="reference" name="thumbDisabled"/>
+
+    <!-- thumb shadow specifications -->
+    <attr format="boolean" name="thumbShadow"/>
+    <attr format="color" name="thumbShadowColor"/>
+    <attr format="dimension" name="thumbShadowXOffset"/>
+    <attr format="dimension" name="thumbShadowYOffset"/>
+    <attr format="dimension" name="thumbShadowBlur"/>
+
+    <attr format="integer|float" name="minDefValue"/>
+
+    <!-- the maximum of the range -->
+    <attr format="integer|float" name="maxDefValue"/>
+  </declare-styleable>
+
+</resources>

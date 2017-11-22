@@ -1,0 +1,161 @@
+{
+  "project_info": {
+    "project_number": "857697114681",
+    "firebase_url": "https://unibuy-165913.firebaseio.com",
+    "project_id": "unibuy-165913",
+    "storage_bucket": "unibuy-165913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857697114681:android:952d796226eeebf1",
+        "android_client_info": {
+          "package_name": "com.unibuy.production"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857697114681-rnkfiiqliob3d2004a9c0o1e1120oilk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.production",
+            "certificate_hash": "471e64f41f50acf0f0697d9dcc677d733dd57780"
+          }
+        },
+        {
+          "client_id": "857697114681-u4vhddvqp76oib354q601sqrmtnuopda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.production",
+            "certificate_hash": "e480faf0fc078c03258a0749cd812ab76d5dbdb5"
+          }
+        },
+        {
+          "client_id": "857697114681-658jhb1t5ea12hq21nedsf27ua1o84t4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.production",
+            "certificate_hash": "b1896b43be006dbfc285773f1d13673e12261cfa"
+          }
+        },
+        {
+          "client_id": "857697114681-9g2ij2eueob7jluo0gl0aqfe4v2oj4vi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.production",
+            "certificate_hash": "fc5df8b52b8fc99cb15f5411fb7bbefc853f122e"
+          }
+        },
+        {
+          "client_id": "857697114681-ekbv6bbk3d9k9u1ahdsrtv9a9dlar618.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "857697114681-79fhu9imbbetpao2r01bdsehek6nip3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLh3I5zABmg5GZZg6AuyA2t9cUqv01s4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857697114681-ekbv6bbk3d9k9u1ahdsrtv9a9dlar618.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "857697114681-g1g7shk3adlsv3b257du7vvhn0bmv7j5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.UNIBuy"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857697114681:android:7f5cebbc34d03b7e",
+        "android_client_info": {
+          "package_name": "com.unibuy.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857697114681-ms8lqmn2g0gt2n1nmrc6nm9n788pns0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.staging",
+            "certificate_hash": "e480faf0fc078c03258a0749cd812ab76d5dbdb5"
+          }
+        },
+        {
+          "client_id": "857697114681-t221e4720u4vc81vqvkr4uarr8rr2rr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.staging",
+            "certificate_hash": "b1896b43be006dbfc285773f1d13673e12261cfa"
+          }
+        },
+        {
+          "client_id": "857697114681-kdjauqet125enbqdstna3h4pgr5loanp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unibuy.staging",
+            "certificate_hash": "471e64f41f50acf0f0697d9dcc677d733dd57780"
+          }
+        },
+        {
+          "client_id": "857697114681-ekbv6bbk3d9k9u1ahdsrtv9a9dlar618.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "857697114681-79fhu9imbbetpao2r01bdsehek6nip3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLh3I5zABmg5GZZg6AuyA2t9cUqv01s4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857697114681-ekbv6bbk3d9k9u1ahdsrtv9a9dlar618.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "857697114681-g1g7shk3adlsv3b257du7vvhn0bmv7j5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.UNIBuy"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="LoginActivityBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.auth.viewmodel.LogInActivityViewModel"
+        />
+  </data>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_agent_questioner"
+        android:orientation="vertical"
+        >
+      <!--<View-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="@dimen/status_bar_height"-->
+      <!--/>-->
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/logInToolBar"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          app:contentInsetLeft="0dp"
+          app:contentInsetStart="0dp"
+          >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/title_login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            style="@style/fontAvenirMedium"
+            />
+      </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/colorWhite"
+          >
+
+
+        <ImageView
+            android:id="@+id/uniDealLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_login_logo"
+            />
+
+        <RelativeLayout
+            android:id="@+id/socialMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uniDealLogo"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            >
+
+          <ImageView
+              android:id="@+id/faceBookLogo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp"
+              app:srcCompat="@drawable/ic_facebook_test"
+              />
+
+          <ImageView
+              android:id="@+id/googlePlusLogo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp"
+              android:layout_toEndOf="@+id/faceBookLogo"
+              android:layout_toRightOf="@+id/faceBookLogo"
+              app:srcCompat="@drawable/ic_google_login"
+              />
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/socialMedia"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="36dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/emailEditText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_email"
+              android:inputType="textEmailAddress"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            app:passwordToggleDrawable="@drawable/ic_password_requester"
+            app:passwordToggleTint="@color/colorPersianGreen"
+            >
+
+          <EditText
+              android:id="@+id/input_password"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/text_password"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingBottom="15dp"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_below="@+id/rememberMe"
+            android:text="@string/text_login"
+            android:textSize="17sp"
+            style="@style/ButtonAgentQuestioner"
+            />
+
+        <CheckBox
+            android:id="@+id/rememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:button="@drawable/drw_remember_me_selector"
+            android:checked="true"
+            android:paddingLeft="5dp"
+            android:text="@string/text_remember_me"
+            android:textColor="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/password"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:gravity="center"
+            android:text="@string/text_forgot_password"
+            android:textColor="@color/colorSantasGray"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginButton"
+            android:gravity="center"
+            >
+
+          <TextView
+              android:id="@+id/signUpClick"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_marginTop="21dp"
+              android:gravity="top"
+              android:text="@string/text_new_to_unideal"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/signUpClickAgain"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:layout_marginTop="21dp"
+              android:layout_toEndOf="@+id/signUpClick"
+              android:layout_toRightOf="@+id/signUpClick"
+              android:gravity="top"
+              android:text="@string/text_signup_here"
+              android:textColor="@color/colorPersianGreen"
+              android:textSize="12sp"
+              style="@style/fontAvenirHeavy"
+              />
+        </RelativeLayout>
+      </RelativeLayout>
+    </ScrollView>
+  </LinearLayout>
+</layout>

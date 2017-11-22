@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <data class="DeliveryPlaceBinding"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/deliveryPlaceToolbar"
+        style="@style/UniDealToolbar.Questioner"
+        >
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_bar_icon"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/title_unideal_delivery_place"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            style="@style/fontAvenirMedium"
+            />
+      </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:id="@+id/deliveryPlaceWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/deliveryPlaceToolbar"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+  </RelativeLayout>
+</layout>

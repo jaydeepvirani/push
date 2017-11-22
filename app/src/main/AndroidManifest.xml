@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.unideal">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <application
+      android:name=".UniDealApplication"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/unideal_app_name"
+      android:supportsRtl="true"
+      android:theme="@style/UniDealTheme"
+      tools:replace="android:label">
+    <activity
+        android:name=".auth.view.SplashActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealThemeAuth"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".auth.view.LogInActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme" />
+    <activity
+        android:name=".auth.view.SignUpActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme" />
+    <activity
+        android:name=".auth.view.ForgetPasswordActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme" />
+    <activity
+        android:name=".auth.view.LanguageActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealThemeAuth"
+        android:windowSoftInputMode="adjustPan|adjustResize" />
+    <activity
+        android:name=".agent.view.AgentHomeActivity"
+        android:configChanges="locale"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Agent"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+    <activity
+        android:name=".agent.view.AgentProfileActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Agent" />
+    <activity
+        android:name=".agent.view.JobDetailsActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Agent" />
+    <activity
+        android:name=".agent.view.ProposalActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealDialog" />
+    <activity
+        android:name=".agent.view.JobMessageActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".agent.view.FilterActivity"
+        android:theme="@style/UniDealDialog" />
+    <activity
+        android:name="com.soundcloud.android.crop.CropImageActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".agent.view.QuestionerProfileActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Agent" />
+    <activity
+        android:name=".questioner.view.QuestionerHomeActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+    <activity
+        android:name=".questioner.view.TermsNConditionActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealDialog" />
+    <activity
+        android:name=".questioner.view.DisclaimerActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealDialog" />
+    <activity
+        android:name=".questioner.view.QuestionerNewJobsActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner"
+        android:windowSoftInputMode="adjustPan" />
+    <activity
+        android:name=".questioner.view.QuestionerProfileActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".questioner.view.AgentProfileActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".questioner.view.QuestionerJobDetailsActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".questioner.view.BankAccountInfoActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".questioner.view.payment.ManageCardActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".questioner.view.payment.AddNewCardActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealTheme.Questioner" />
+    <activity
+        android:name=".agent.view.AgentOfferActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/UniDealDialog" />
+
+    <service android:name=".service.UploadingService" />
+    <service android:name=".fcm.MyFirebaseMessagingService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    <service android:name=".fcm.MyFirebaseInstanceIDService">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+      </intent-filter>
+    </service>
+
+    <activity
+        android:name=".ImageViewerActivity"
+        android:theme="@style/UniDealTheme" />
+    <activity android:name=".questioner.view.AwardConformationActivity" />
+    <activity
+        android:name=".agent.view.WalkThroughActivity"
+        android:theme="@style/UniDealTheme" />
+    <activity
+        android:name=".questioner.view.UniDealDeliveryPlaceActivity"
+        android:theme="@style/UniDealTheme" />
+  </application>
+
+</manifest>

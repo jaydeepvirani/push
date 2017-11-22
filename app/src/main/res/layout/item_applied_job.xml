@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="AppliedJobBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.agent.viewmodel.JobsViewModel"
+        />
+  </data>
+  <android.support.v7.widget.CardView style="@style/JobCardStyle">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        >
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobTypeField}"
+            android:textSize="12sp"
+            tools:text="Taxation"
+            style="@style/fontAvenirBook"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobIdField}"
+            android:textColor="@color/colorShark"
+            android:textSize="12sp"
+            tools:text="#234"
+            style="@style/fontAvenirBook"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobTotalApplicants}"
+            android:textColor="@color/colorShark"
+            android:textSize="12sp"
+            tools:text="24 Applicants"
+            style="@style/fontAvenirBook"
+            />
+
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="6dp"
+          android:layout_marginTop="6dp"
+          >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@{viewmodel.jobTitle}"
+            android:textColor="@color/colorShark"
+            android:textSize="15sp"
+            tools:text="What are different types of taxation in the country?"
+            style="@style/fontAvenirMedium"
+            />
+      </LinearLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/drw_client"
+            android:drawablePadding="@dimen/icon_padding"
+            android:drawableStart="@drawable/drw_client"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobClientName}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="12sp"
+            tools:text="Taxation"
+            style="@style/fontAvenirBook"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/drw_job_budget"
+            android:drawablePadding="@dimen/icon_padding"
+            android:drawableStart="@drawable/drw_job_budget"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobPrice}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="12sp"
+            tools:text="#234"
+            style="@style/fontAvenirBook"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/drw_job_end_date"
+            android:drawablePadding="@dimen/icon_padding"
+            android:drawableStart="@drawable/drw_job_end_date"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@{viewmodel.jobEndDate}"
+            android:textColor="@color/colorSpunPearl"
+            android:textSize="12sp"
+            tools:text="#234232"
+            style="@style/fontAvenirBook"
+            />
+      </RelativeLayout>
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+</layout>

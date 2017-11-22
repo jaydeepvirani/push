@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+  <data class="SplashBinding"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      >
+    <ImageView
+        android:id="@+id/imageViewAppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_splash_logo"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAppLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        >
+      <TextView
+          android:id="@+id/textViewRefresh"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="30dp"
+          android:padding="16dp"
+          android:text="@string/text_refresh"
+          android:visibility="gone"
+          />
+      <ProgressBar
+          android:id="@+id/refreshProgressBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          />
+    </RelativeLayout>
+  </RelativeLayout>
+</layout>

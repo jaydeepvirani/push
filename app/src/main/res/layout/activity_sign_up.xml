@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="SignUpBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.auth.viewmodel.SignUpViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/signUpToolBar"
+        style="@style/UniDealToolbar.Agent"
+        >
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_bar_icon"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_sign_up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            style="@style/fontAvenirMedium"
+            />
+      </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/signUpToolBar"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        >
+
+      <Button
+          android:id="@+id/agent"
+          android:layout_width="wrap_content"
+          android:layout_height="36dp"
+          android:layout_marginEnd="9dp"
+          android:layout_marginRight="9dp"
+          android:background="@drawable/drw_sign_up_log_in_button_agent"
+          android:gravity="center"
+          android:maxWidth="120dp"
+          android:minWidth="130dp"
+          android:text="@string/agent"
+          android:textAllCaps="false"
+          android:textColor="@drawable/drw_text_color_selector_agent"
+          android:textSize="19sp"
+          style="@style/fontAvenirBook"
+          />
+
+      <Button
+          android:id="@+id/questioner"
+          android:layout_width="wrap_content"
+          android:layout_height="36dp"
+          android:layout_toEndOf="@+id/agent"
+          android:layout_toRightOf="@+id/agent"
+          android:background="@drawable/drw_sign_up_log_in_button_questioner"
+          android:gravity="center"
+          android:maxWidth="120dp"
+          android:minWidth="130dp"
+          android:text="@string/questioner"
+          android:textAllCaps="false"
+          android:textColor="@drawable/drw_text_color_selector_questioner"
+          android:textSize="19sp"
+          style="@style/fontAvenirBook"
+          />
+
+    </RelativeLayout>
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/buttonLayout"
+        />
+  </RelativeLayout>
+</layout>

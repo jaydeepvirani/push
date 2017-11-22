@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+  <data class="QuestionerProfileBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.questioner.viewmodel.ProfileFragmentViewModel"
+        />
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/UniDealToolbar.Questioner"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center"
+          android:text="@string/title_profile"
+          android:textColor="@color/colorWhite"
+          android:textSize="18sp"
+          style="@style/fontAvenirMedium"
+          />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@id/toolBar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="24dp"
+          >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/profilePhoto"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_centerInParent="true"
+              android:layout_marginTop="27dp"
+              />
+
+          <TextView
+              android:id="@+id/editProfileButton"
+              android:layout_width="80dp"
+              android:layout_height="32dp"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/drw_edit_profile"
+              android:drawableLeft="@drawable/drw_edit_profile_layer"
+              android:drawableStart="@drawable/drw_edit_profile_layer"
+              android:gravity="center_vertical"
+              android:paddingLeft="10dp"
+              android:paddingStart="10dp"
+              android:text="@string/text_edit"
+              android:textColor="@color/colorWhite"
+              />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            android:visibility="gone"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <TextView
+              android:id="@+id/lblFullName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:enabled="false"
+              android:text="@string/hint_full_name"
+              android:textAllCaps="true"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/fullName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblFullName"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              tools:text="Full Name"
+              style="@style/fontAvenirBook"
+              />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorSantasGray"
+            android:visibility="gone"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <TextView
+              android:id="@+id/lblEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:enabled="false"
+              android:text="@string/hint_email"
+              android:textAllCaps="true"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblEmail"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              tools:text="Email"
+              style="@style/fontAvenirBook"
+              />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/numberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblNumber"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/hint_contact_number"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblNumber"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/colorShark"
+              android:textSize="12sp"
+              tools:text="Contact Number"
+              style="@style/fontAvenirBook"
+
+              />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/genderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberLayout"
+            android:visibility="gone"
+            >
+
+          <TextView
+              android:id="@+id/lblGender"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="27dp"
+              android:layout_marginStart="27dp"
+              android:layout_marginTop="10dp"
+              android:text="@string/text_gender"
+              android:textColor="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+          <TextView
+              android:id="@+id/genderType"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lblGender"
+              android:layout_marginLeft="27dp"
+              android:layout_marginRight="27dp"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              tools:text="Male"
+              style="@style/fontAvenirBook"
+              />
+        </RelativeLayout>
+      </RelativeLayout>
+    </ScrollView>
+  </RelativeLayout>
+</layout>

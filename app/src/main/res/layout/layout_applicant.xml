@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="ApplicantBinding"/>
+
+  <LinearLayout
+      android:id="@+id/applicantLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:visibility="gone"
+      >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@color/colorBlack"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+
+        <RelativeLayout
+            android:id="@+id/leftArrowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+          <ImageView
+              android:id="@+id/swipeLeftArrow"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="60dp"
+              android:layout_marginStart="60dp"
+              app:srcCompat="@drawable/ic_arrowleft"
+              />
+
+          <TextView
+              android:id="@+id/text_leftarrow"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toEndOf="@+id/swipeLeftArrow"
+              android:layout_toRightOf="@+id/swipeLeftArrow"
+              android:text="@string/text_swipe_left"
+              android:textColor="@color/colorWhite"
+              />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rightArrowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/leftArrowLayout"
+            >
+
+          <ImageView
+              android:id="@+id/rightArrow"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginEnd="60dp"
+              android:layout_marginRight="60dp"
+              app:srcCompat="@drawable/ic_rightarrow"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/rightArrow"
+              android:layout_toStartOf="@+id/rightArrow"
+              android:text="@string/text_swipe_right"
+              android:textColor="@color/colorWhite"
+              />
+        </RelativeLayout>
+      </RelativeLayout>
+
+    </FrameLayout>
+  </LinearLayout>
+</layout>

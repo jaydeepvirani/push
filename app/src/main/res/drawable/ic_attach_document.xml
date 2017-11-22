@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="28dp"
+    android:viewportHeight="5320.0"
+    android:viewportWidth="5120.0"
+    android:width="28dp">
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M0,2660l0,-2660 1440,0 1440,0 639,643 640,642 -2,825 -2,825 -95,0 -95,0 -3,-752 -2,-753 -618,-2 -617,-3 -3,-617 -2,-618 -1265,0 -1265,0 0,2470 0,2470 1278,2 1277,3 3,93 3,92 -1376,0 -1375,0 0,-2660zM3440,853c-205,-208 -404,-409 -442,-448l-68,-70 0,448 0,447 442,0 442,0 -374,-377z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M2992,4253l3,-1068 1063,-3 1062,-2 0,1070 0,1070 -1065,0 -1065,0 2,-1067zM4930,4255l0,-875 -870,0 -870,0 0,875 0,875 870,0 870,0 0,-875z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M3987,4924c-4,-4 -7,-121 -7,-260l0,-254 -252,-2 -253,-3 0,-110 0,-110 252,-3 253,-2 2,-253 3,-252 110,0 110,0 3,252 2,253 258,2 257,3 0,110 0,110 -257,3 -258,2 -2,258 -3,257 -106,3c-58,1 -108,-1 -112,-4z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M925,4258c-62,-33 -73,-107 -26,-160l29,-33 634,-3c432,-2 645,0 670,8 81,23 103,107 44,166l-34,34 -648,0c-453,-1 -655,-4 -669,-12z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M901,3529c-58,-57 -33,-146 47,-169 25,-8 276,-10 799,-8l762,3 30,29c25,24 31,38 31,74 0,35 -6,49 -29,73l-29,29 -790,0 -790,0 -31,-31z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M899,2821c-23,-23 -29,-38 -29,-71 0,-33 6,-48 29,-71l29,-29 1147,0 1147,0 29,29c44,44 38,111 -15,153 -20,16 -96,18 -1164,18l-1144,0 -29,-29z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M899,2111c-23,-23 -29,-38 -29,-71 0,-33 6,-48 29,-71l29,-29 1147,0 1147,0 29,29c40,41 41,97 0,140l-29,31 -1147,0 -1147,0 -29,-29z"
+      android:strokeColor="#00000000"/>
+  <path
+      android:fillColor="@color/colorCuriousBlue"
+      android:pathData="M899,1401c-23,-23 -29,-38 -29,-71 0,-33 6,-48 29,-71l29,-29 484,0 484,0 29,30c22,23 30,40 30,70 0,30 -8,47 -30,70l-29,30 -484,0 -484,0 -29,-29z"
+      android:strokeColor="#00000000"/>
+</vector>

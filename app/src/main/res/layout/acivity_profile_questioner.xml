@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+  <data class="ProfileQuestionerBinding">
+
+    <variable
+        name="viewmodel"
+        type="com.android.unideal.questioner.viewmodel.QuestionerProfileViewModel"
+        />
+  </data>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWildSand"
+      android:orientation="vertical"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bank_info_toolbar"
+        style="@style/UniDealToolbar.Questioner"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/edit_profile"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            />
+      </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/bank_info_toolbar"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorWhite"
+        android:fillViewport="true"
+        android:paddingBottom="10dp"
+        android:scrollbars="none"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="24dp"
+          >
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/profilePhoto"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_centerInParent="true"
+              android:layout_marginTop="27dp"
+              />
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/fullName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_full_name"
+              android:inputType="textCapWords"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:enabled="false"
+              android:hint="@string/hint_email"
+              android:inputType="textEmailAddress"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/oldPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/oldPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_old_password"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingBottom="15dp"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/NewPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oldPasswordLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/NewPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_new_password"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingBottom="15dp"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ConfirmPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NewPasswordLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/ConfirmPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_retype_password"
+              android:inputType="textPassword"
+              android:maxLines="1"
+              android:paddingBottom="15dp"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/numberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ConfirmPasswordLayout"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textColorHint="@color/colorSantasGray"
+            app:hintTextAppearance="@style/TextInputStyle"
+            >
+
+          <EditText
+              android:id="@+id/number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/hint_contact_number"
+              android:inputType="numberDecimal"
+              android:maxLength="10"
+              android:maxLines="1"
+              android:textColor="@color/colorShark"
+              android:textColorHighlight="@color/colorSantasGray"
+              android:textSize="12sp"
+              style="@style/fontAvenirBook"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/genderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberLayout"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:text="@string/text_gender"
+            android:textColorHint="@color/colorPersianGreen"
+            android:textSize="12sp"
+            style="@style/fontAvenirBook"
+            />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderText"
+            android:layout_marginEnd="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            style="@style/SpinnerStyle"
+            />
+
+      </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+      <Button
+          android:id="@+id/submitButton"
+          android:layout_marginBottom="8dp"
+          android:text="@string/text_edit_profile"
+          android:textSize="17sp"
+          style="@style/ButtonQuestioner"
+          />
+    </LinearLayout>
+
+  </RelativeLayout>
+</layout>
